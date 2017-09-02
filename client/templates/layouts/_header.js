@@ -33,9 +33,6 @@ if (Meteor.isClient) {
     profile: function () {
       return Session.get('profile');
     },
-    nothome: function () {
-      return Session.get('profile');
-    },
   });
 
 	Template._header.events({

@@ -27,12 +27,11 @@ $heavy_text: #212b35;
 $purple_text: #5c6ac4;
 
 html {
-	background-color: $light_grey;
+	background-color: white;
 }
 
-.logo_svg {
-
-}
+p { @extend .flow-text; }
+a { @extend .flow-text; text-decoration: underline; color: black !important; }
 
 .purple-btn {
 	@extend .btn;
@@ -42,10 +41,16 @@ html {
 }
 
 div.main-content {
-	width: 90%; margin: 10px auto;
+
 	text-align: center;
-	p { width: 100%; }
-	div.img_container { img { width: 50%; } }
+	p { width: 96%; margin: 10px auto; }
+	div.img_container { img { width: 50%; margin-top: 20px; } }
+	.hello { width: 62%; }
+	.welcome { font-size: 100%; width: 80%; a { text-decoration: underline; } }
+	#shopify-full-color-black{
+    width: 44%; height: 50px;
+  }
+	img.random_img { width: 100%; margin: 20px 0; }
 }
 
 div.button-area {
@@ -60,7 +65,7 @@ div.button-area {
 }
 
 ul.collapsible {
-	width: 90%; margin: 10px auto;
+	width: 90%; margin: 30px auto;
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------*/

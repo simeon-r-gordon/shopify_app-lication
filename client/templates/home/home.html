@@ -4,11 +4,16 @@
   </div>
 
   <!-- MEDIUM AND SMALLER CONTENT -->
-  <div class="page-content hide-on-large-only">
+  <!-- <div class="page-content hide-on-large-only"> -->
 
 	  <div class="main-content">
 	  	<div class="img_container"><img src="images/{{ profile.name.first }}.jpg" href="{{ pathFor 'home' }}" alt="" class="circle main-img"></div>
-	  	{{> logo_svg }}
+	  	<img class="hello" src="/images/hello.png">
+	  	<p class="welcome">
+	  		Welcome to my app-lication for the position of <br>
+	  		<a href="{{ job.link }}">{{ job.title }}</a>
+	  	</p>
+	  	<img class="random_img" src="{{ random_img }}">
 	  </div>
 
 	  <div class="button-area">
@@ -23,5 +28,5 @@
 	      <a href="{{ pathFor 'interests' }}" class="purple-btn">interests</a>
 	    {{/if}}
   	</div>
-  </div>
+  <!-- </div> -->
 </template>
