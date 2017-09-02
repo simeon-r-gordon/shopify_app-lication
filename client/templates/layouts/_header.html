@@ -1,0 +1,42 @@
+<template name="_header">
+  <div class="navbar-fixed">
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <!-- hamburger menu to the right -->
+        <a class="button-collapse" data-activates="main-nav">
+          <i class="material-icons">menu</i>
+        </a>
+        <!-- shopify logo -->
+        <div class="nav-wrapper">
+          <div class="logo center">{{> logo_svg }}</div>
+        </div>
+    </nav>
+  </div>
+
+  <!-- dropdown side-bar -->
+  <div class="side-nav" id="main-nav">
+    <ul>
+      <li class="details">
+
+        <img src="images/{{ profile.name.first }}.jpg" href="{{ pathFor 'home' }}" alt="" class="circle navbar-img">
+        <a id="profile-name" href="{{ pathFor 'home' }}" class="profile-name">{{ profile.name.last }}, {{ profile.name.first }}</a>
+        <a id="profile-number" href="{{ pathFor 'home' }}" class="profile-number">{{ profile.phone }}</a>
+      </li>
+      <li class="divider"></li>
+
+      <li class="{{ isActiveRoute regex='about' }}"><a id="about" href="{{ pathFor 'about' }}">about me</a></li>
+      <li class="{{ isActiveRoute regex='skills' }}"><a id="skills" href="{{ pathFor 'skills' }}">skills</a></li>
+      <li class="{{ isActiveRoute regex='work' }}"><a id="work" href="{{ pathFor 'work' }}">work experience</a></li>
+
+      {{#if logan }}
+        <li class="{{ isActiveRoute regex='portfolio' }}"><a id="portfolio" href="{{ pathFor 'portfolio' }}">portfolio</a></li>
+        <li class="divider"></li>
+        <li><a id="app" href="{{ pathFor 'home' }}">check out my friend's app</a></li>
+      {{/if}}
+      {{#if simeon }}
+        <li class="{{ isActiveRoute regex='interests' }}"><a id="interests" href="{{ pathFor 'interests' }}">interests</a></li>
+        <li class="divider"></li>
+        <li><a id="app" href="{{ pathFor 'home' }}">check out my friend's app</a></li>
+      {{/if}}
+    </ul>
+  </div>
+</template>

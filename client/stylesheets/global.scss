@@ -1,0 +1,69 @@
+@import "{materialize:materialize}/sass/materialize.scss";
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import "navbar.scss";
+
+@font-face { font-family: Verdana; src: url("/fonts/verdana/verdana.ttf") }
+@font-face { font-family: VerdanaBold; src: url("/fonts/verdana/verdanab.ttf") }
+@font-face { font-family: "RobotoThin"; src: local(Roboto Thin), url("/fonts/roboto/Roboto-Thin.ttf") format("ttf"); font-weight: 100; }
+@font-face { font-family: "RobotoLight"; src: local(Roboto Light), url("/fonts/roboto/Roboto-Light.ttf") format("ttf"); font-weight: 300; }
+@font-face { font-family: "RobotoRegular"; src: local(Roboto Regular), url("/fonts/roboto/Roboto-Regular.ttf") format("ttf"); font-weight: 400; }
+@font-face { font-family: "RobotoMedium"; src: local(Roboto Medium), url("/fonts/roboto/Roboto-Medium.ttf") format("ttf"); font-weight: 500; }
+@font-face { font-family: "RobotoBold"; src: local(Roboto Bold), url("/fonts/roboto/Roboto-Bold.ttf") format("ttf"); font-weight: 700; }
+
+
+$med_purple: #5c6ac4;
+$dark_purple: #202e78;
+
+$med_button_grey: #30373b;
+$dark_button_grey: #22272a;
+$light_grey: #f4f6f8;
+$med_grey: #dfe3e8;
+$dark_grey: #2a2c2e;
+
+$dark_blue: #000639;
+$normal_text: #717f8c;
+$heavy_text: #212b35;
+$purple_text: #5c6ac4;
+
+html {
+	background-color: $light_grey;
+}
+
+.logo_svg {
+
+}
+
+.purple-btn {
+	@extend .btn;
+	background-color: $med_purple; font-weight: 500;
+	&:hover, &:active { background-color: $dark_purple !important; }
+	&.selected, &:focus { background-color: $dark_purple !important; }
+}
+
+div.main-content {
+	p { width: 90%; margin: 10px auto; }
+}
+
+div.button-area {
+	text-align: center;
+	margin-bottom: 50px;
+	a {
+		height: 60px; width: 90%;
+    margin: 10px auto;
+    font-size: 180%;
+    line-height: 60px;
+	}
+}
+
+ul.collapsible {
+	width: 90%; margin: 10px auto;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------- fonts ----------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+html {
+	font-family: RobotoRegular;
+	color: $normal_text
+}

@@ -1,0 +1,90 @@
+@import "{materialize:materialize}/sass/materialize.scss";
+
+$med_purple: #5c6ac4;
+$dark_purple: #202e78;
+
+$med_button_grey: #30373b;
+$dark_button_grey: #22272a;
+$light_grey: #f4f6f8;
+$med_grey: #dfe3e8;
+$dark_grey: #2a2c2e;
+
+$dark_blue: #000639;
+$normal_text: #717f8c;
+$heavy_text: #212b35;
+$purple_text: #5c6ac4;
+
+nav .button-collapse{
+  float: right;
+}
+
+nav.navbar {
+  color: $heavy_text;
+  .button-collapse { color: $dark_grey; }
+  .nav-wrapper{
+    background-color: white;
+    .logo {
+      height: 100%;
+      #shopify-full-color-black{
+        width: 20%; height: 100%;
+        @extend .center;
+      }
+    }
+  }
+}
+.side-nav{
+  width: 50%; text-align: right;
+
+  li a {
+    font-weight: 400; height: 44px; line-height: 44px;
+    &.profile-name { font-weight: 600; font-size: 130%; line-height: 130%; }
+    &.profile-number { letter-spacing: 2px; font-style: italic; height: 24px; line-height: 24px; font-weight: 300; }
+  }
+  .navbar-img {
+    width: 70%;
+    margin: 0 15%;
+  }
+}
+
+
+/*----------------- FOOTER SETTINGS -----------------------*/
+footer {
+  background-color: $dark_blue;
+  color: white;
+  .footer-img {
+    width: 100%;
+    height: 50px;
+    background-image: url(https://cdn.shopify.com/assets2/modules/footer-signup/footer-signup-background-72081e65322bcc3594e4c2c2a528aec7043dc28dffe45deee818f22b49683150.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .footer {
+    height: 60px; line-height: 60px;
+    display: inline-flex; justify-content: space-around;
+    width: 80%; margin: 0 10%;
+    .copy { font-size: 105%; line-height: 30px; }
+    /*a { font-size: 125%; }*/
+  }
+}
+
+.copy-left { display: inline-block; text-align: right; margin: 0px; -moz-transform: scaleX(-1); -o-transform: scaleX(-1); -webkit-transform: scaleX(-1); transform: scaleX(-1); filter: FlipH; -ms-filter: “FlipH”; }
+
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  nav.navbar {
+  }
+}
+
+@media #{$medium-and-down} {
+  nav.navbar {
+  }
+  /*----------------- SMALL FOOTER SETTINGS -----------------------*/
+  footer {
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav.navbar {
+  }
+}

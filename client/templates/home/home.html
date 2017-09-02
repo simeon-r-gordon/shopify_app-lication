@@ -1,0 +1,26 @@
+<template name="home">
+  <!-- LARGE CONTENT -->
+  <div class="page-content hide-on-med-and-down">
+  </div>
+
+  <!-- MEDIUM AND SMALLER CONTENT -->
+  <div class="page-content hide-on-large-only">
+
+	  <div class="main-content">
+	  {{> lorem1 }}
+	  </div>
+
+	  <div class="button-area">
+	  	<a href="{{ pathFor 'about' }}" class="purple-btn">about me</a>
+	    <a href="{{ pathFor 'skills' }}" class="purple-btn">skills</a>
+	    <a id="work" href="{{ pathFor 'work' }}" class="purple-btn">work experience</a>
+
+	    {{#if logan }}
+	      <a id="portfolio" href="{{ pathFor 'portfolio' }}" class="purple-btn">portfolio</a>
+	    {{/if}}
+	    {{#if simeon }}
+	      <a href="{{ pathFor 'interests' }}" class="purple-btn">interests</a>
+	    {{/if}}
+  	</div>
+  </div>
+</template>

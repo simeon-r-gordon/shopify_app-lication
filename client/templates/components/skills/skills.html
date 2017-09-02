@@ -1,0 +1,25 @@
+<template name="skills">
+  <!-- MEDIUM AND SMALLER CONTENT -->
+  <div class="page-content hide-on-large-only"> <div class="main-content">
+	    <p>
+				{{> lorem1 }}
+			</p>
+
+			<ul class="collapsible" data-collapsible="accordion">
+	      <!-- if we want, add the odd item class to change every other row -->
+	      <!-- <li class="{{#if odd @index}}odd_item{{/if}}"> -->
+		    {{#each skills }}
+		      <li>
+		        <div class="collapsible-header"><i class="material-icons">{{this.icon}}</i>{{this.title}}</div>
+		      	<div class="collapsible-body">
+		      		<img class="list_img" src="{{this.img}}">
+		      		<span>Lorem ipsum dolor sit amet.</span>
+		    		</div>
+		      </li>
+		    {{/each}}
+		  </ul>
+  </div> </div>
+</template>
+
+<template name="simeonskills">
+</template>
