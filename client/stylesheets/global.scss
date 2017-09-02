@@ -31,13 +31,18 @@ html {
 }
 
 p { @extend .flow-text; }
-a { @extend .flow-text; text-decoration: underline; color: black !important; }
+a {
+	@extend .flow-text; text-decoration: underline; color: black;
+	&:visited { color: black; }
+}
 
 .purple-btn {
 	@extend .btn;
-	background-color: $med_purple; font-weight: 500;
+	color: white; background-color: $med_purple;
+	font-weight: 500;
 	&:hover, &:active { background-color: $dark_purple !important; }
 	&.selected, &:focus { background-color: $dark_purple !important; }
+	&:visited { color: white; }
 }
 
 div.main-content {
@@ -65,7 +70,9 @@ div.button-area {
 }
 
 ul.collapsible {
-	width: 90%; margin: 30px auto;
+	width: 92%; margin: 30px auto;
+	.collapsible-body { background-color: $light_grey; }
+	&.popout li { margin: 0 10px; }
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------*/
