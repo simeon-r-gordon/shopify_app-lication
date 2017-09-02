@@ -1,1 +1,8 @@
 node_modules/
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+dump
+settings.json
+prod.settings.json
+.meteor/local/

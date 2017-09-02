@@ -18,4 +18,26 @@ ecmascript@0.8.1              # Enable ECMAScript2015+ syntax in app code
 shell-server@0.2.4            # Server-side component of the `meteor shell` command
 
 autopublish@1.0.7             # Publish all data to the clients (for prototyping)
-insecure@1.0.7                # Allow all DB writes from clients (for prototyping)
+
+less
+reywood:publish-composite
+iron:router
+zimme:iron-router-active
+yasinuslu:blaze-meta
+aldeed:collection2
+aldeed:autoform
+aldeed:autoform-bs-datepicker
+gildaspk:autoform-materialize
+session
+jquery
+logging
+reload
+ejson
+check
+materialize:materialize
+fourseven:scss
+webtempest:animate
+rajit:bootstrap3-datepicker
+fortawesome:fontawesome
+http
+east5th:check-checker
