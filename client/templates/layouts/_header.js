@@ -33,12 +33,18 @@ if (Meteor.isClient) {
     profile: function () {
       return Session.get('profile');
     },
+    nothome: function () {
+      return Session.get('profile');
+    },
   });
 
 	Template._header.events({
 		'click a[target=_blank]': function (event) {
 	    console.log(event.target.href);
 	  },
+    'click #back': function (event) {
+      Router.go('/');
+    },
 	});
 
 	Template._footer.events({

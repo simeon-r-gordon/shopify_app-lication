@@ -7,7 +7,10 @@
         </a>
         <!-- shopify logo -->
         <div class="nav-wrapper">
-          <div class="logo center">{{> logo_svg }}</div>
+          {{#if isNotActivePath '/' }}
+            <i id="back" class="material-icons">chevron_left</i>
+          {{/if}}
+          <a href="/" class="brand-logo center">{{ profile.name.first }} {{ profile.name.last }}</a>
         </div>
     </nav>
   </div>

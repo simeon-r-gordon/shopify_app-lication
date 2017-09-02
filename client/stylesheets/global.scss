@@ -42,7 +42,10 @@ html {
 }
 
 div.main-content {
-	p { width: 90%; margin: 10px auto; }
+	width: 90%; margin: 10px auto;
+	text-align: center;
+	p { width: 100%; }
+	div.img_container { img { width: 50%; } }
 }
 
 div.button-area {
