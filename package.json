@@ -1,5 +1,5 @@
 {
-  "name": "shopify_app-lication",
+  "name": "com.shopify.application",
   "private": true,
   "scripts": {
     "start": "meteor run"

@@ -21,6 +21,8 @@ $light_grey: #f4f6f8;
 $med_grey: #dfe3e8;
 $dark_grey: #2a2c2e;
 
+$med_green: #95bf47;
+
 $dark_blue: #000639;
 $normal_text: #637381;
 $heavy_text: #212b35;
@@ -82,7 +84,7 @@ ul.collapsible {
 		font-weight: bold;
 	}
 	.collapsible-body {
-		text-align: left; padding: 10px;
+		text-align: left; padding: 15px;
 		color: $normal_text; background-color: $light_grey;
 		p { font-size: small; }
 	}
@@ -105,17 +107,32 @@ div.main-content {
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------- skills ------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+ul.collapsible {
+	.collapsible-body {
+		.skill_container { width: 100%; display: inline-flex; justify-content: space-between; }
+		p { font-size: small; max-width: 60%; margin: auto 0; margin-left: -10%; }
+	}
+}
+
+.stars-rating {
+	width: 3.8em !important;
+	.material-icons { font-size: 15px; }
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------- employment --------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------------------------------------------------------*/
 ul.collapsible.jobs {
 	.collapsible-header {
-		padding: 4px 15px;
+		padding: 4px 10px;
 		.job-header {
 			width: 100%;
 			display: inline-flex; justify-content: space-between;
 			.jobtitle, .company {  text-align: left; margin: auto 0; }
-			.jobtitle { font-size: 90%; max-width: 50%;}
-			.company { text-align: right; font-weight: normal; font-size: 80%; margin-right: 4px; }
+			.jobtitle { font-size: 88%; max-width: 50%;}
+			.company { max-width: 50%; text-align: right; font-weight: normal; font-size: 78%; margin-right: 4px; }
 		}
 		.job-img { width: 15%; height: 100%; float: right;}
 	}
@@ -123,7 +140,8 @@ ul.collapsible.jobs {
 		.dates { font-style: italic; margin: 0; font-size: small; }
 		.job-details {
 			width: 100%;
-			p { font-size: 100%; margin-left: 0; }
+			.job_container { width: 100%; display: inline-flex; justify-content: flex-start; }
+			p { max-width: 100%; font-size: 100%; margin-left: 5px; margin-bottom: 10px; }
 		}
 	}
 }

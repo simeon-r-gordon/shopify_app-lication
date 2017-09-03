@@ -48,6 +48,13 @@ if (Meteor.isClient) {
     'click #back': function (event) {
       Router.go('/');
     },
+    'click #app': function (event) {
+      if (Session.get("profile").id == "sim") {
+        Session.set("profile", Session.get("logan"));
+      } else {
+        Session.set("profile", Session.get("simeon"));
+      }
+    },
 	});
 
 	Template._footer.events({
