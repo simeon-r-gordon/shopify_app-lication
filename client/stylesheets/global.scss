@@ -78,11 +78,10 @@ div.button-area {
 ul.collapsible {
 	width: 92%; margin: 30px auto;
 	.collapsible-header {
-
 		color: black;
 		font-weight: bold;
 	}
-	.collapsible-body { background-color: $light_grey; }
+	.collapsible-body { color: $normal_text; background-color: $light_grey; }
 	&.popout li {
 		margin: 0;
 		box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.04), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
@@ -93,15 +92,26 @@ ul.collapsible {
 /*-------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------- employment --------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------------------------------------------------------*/
-ul.collapsible .collapsible-header {
-	.job-header {
-		width: 100%;
-		display: inline-flex; justify-content: space-between;
-		.jobtitle, .company { margin: auto 0; }
-		.company { font-weight: normal; }
+ul.collapsible.jobs {
+	.collapsible-header {
+		.job-header {
+			width: 100%;
+			display: inline-flex; justify-content: space-between;
+			.jobtitle, .company { margin: auto 0; }
+			.company { font-weight: normal; }
+		}
+		.job-img { width: 15%; height: 100%; float: right;}
 	}
-	.job-img { width: 15%; height: 100%; float: right;}
+	.collapsible-body {
+		padding: 10px; text-align: left;
+		.dates { font-style: italic; margin: 0; font-size: small; }
+		.job-details {
+			width: 100%;
+			p { font-size: 100%; margin-left: 0; }
+		}
+	}
 }
+
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------- fonts ----------------------------------------------------------------------*/
