@@ -29,7 +29,7 @@ if (Meteor.isClient) {
             "points": [
               "Founder, Secretary, and CTO of this company dedicated to making blockchain technology accessible to everyone.",
               "Responsible for the management of all code and tech infrastructure for a small tech startup.",
-              "Responsible for the entire lifecycle of mobile and web-app development from conception and design to deployment and maintainance.",
+              "Responsible for the entire lifecycle of mobile and web-app development from conception, to deployment and maintainance.",
             ]
           }
         },

@@ -13,7 +13,7 @@ if (Meteor.isClient) {
       return Session.get('profile');
     },
     intro: function () {
-      var simeon_intro = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis blandit risus sed pretium facilisis.";
+      var simeon_intro = "I believe it is important to keep up a variety of activities in order to maintain balance and keep improving myself.";
       var logan_intro = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis blandit risus sed pretium facilisis.";
       if (Session.get("profile").id == "sim") {
         return simeon_intro;
