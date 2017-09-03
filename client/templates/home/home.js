@@ -3,6 +3,11 @@ if (Meteor.isClient) {
   });
 
   Template.home.onRendered(function() {
+    $(document).ready(function(){
+      $('.slider').slider({"interval": 12000});
+      $('.materialboxed').materialbox();
+      $('.slider').slider('pause')
+    });
     //random number between 0-3 every time we render the homepage
     var number = Math.floor(Math.random() * (4));
     Session.set('rando', number);

@@ -13,7 +13,9 @@
 		        <div class="collapsible-header"><i class="material-icons">{{this.icon}}</i>{{this.title}}</div>
 		      	<div class="collapsible-body">
 		      		<img class="list_img" src="{{this.img}}">
-		      		<span>Lorem ipsum dolor sit amet.</span>
+		      		{{#each skills }}
+		      			<p class="skill">- {{ this }}</p>
+		      		{{/each}}
 		    		</div>
 		      </li>
 		    {{/each}}

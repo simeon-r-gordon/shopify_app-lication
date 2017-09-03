@@ -15,9 +15,16 @@ if (Meteor.isClient) {
   Template.skills.helpers({
     skills: function () {
       var simeon_skills = [
-        {"title": "Development Skills", "icon": "code"},
-        {"title": "Tech Skills", "icon": "computer"},
-        {"title": "People Skills", "icon": "group"},
+        {"title": "Development", "icon": "code",
+          "skills": [
+            {"text": "Lorem ipsum", "stars": 5},
+            {"text": "Lorem ipsum", "stars": 5},
+            {"text": "Lorem ipsum", "stars": 5},
+            {"text": "Lorem ipsum", "stars": 5},
+          ]
+        },
+        {"title": "Technology", "icon": "computer"},
+        {"title": "Professional", "icon": "group"},
       ];
 
       var logan_skills = [
