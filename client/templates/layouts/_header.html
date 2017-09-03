@@ -19,10 +19,10 @@
   <div class="side-nav" id="main-nav">
     <ul>
       <li class="details">
-
         <img src="images/{{ profile.name.first }}.jpg" href="{{ pathFor 'home' }}" alt="" class="circle navbar-img">
-        <a id="profile-name" href="{{ pathFor 'home' }}" class="profile-name">{{ profile.name.last }}, {{ profile.name.first }}</a>
-        <a id="profile-number" href="{{ pathFor 'home' }}" class="profile-number">{{ profile.phone }}</a>
+        <a id="profile-email" href="mailto:{{ profile.email }}{{ email_content }}" class="profile-email">{{ profile.email }}</a>
+        <a id="profile-number" href="tel:+1-{{ profile.phone }}" class="profile-number">{{ profile.phone }}</a>
+        <a id="profile-li" target="_blank" href="{{ profile.li_url }}" class="profile-li">LinkedIn</a>
       </li>
       <li class="divider"></li>
 
@@ -36,6 +36,7 @@
         <li><a id="app" href="{{ pathFor 'home' }}">check out my friend's app</a></li>
       {{/if}}
       {{#if simeon }}
+        <li class="{{ isActiveRoute regex='education' }}"><a id="education" href="{{ pathFor 'education' }}">education</a></li>
         <li class="{{ isActiveRoute regex='interests' }}"><a id="interests" href="{{ pathFor 'interests' }}">interests</a></li>
         <li class="divider"></li>
         <li><a id="app" href="{{ pathFor 'home' }}">check out my friend's app</a></li>

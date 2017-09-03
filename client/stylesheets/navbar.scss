@@ -31,16 +31,19 @@ nav.navbar {
   }
 }
 .side-nav{
-  width: 50%; text-align: right;
+  width: 60%; text-align: right;
 
   li a {
+    padding-right: 10px;
     font-weight: 400; height: 44px; line-height: 44px;
-    &.profile-name { font-weight: 600; font-size: 130%; line-height: 130%; }
-    &.profile-number { letter-spacing: 2px; font-style: italic; height: 24px; line-height: 24px; font-weight: 300; }
+    &.profile-number, &.profile-email, &.profile-li { letter-spacing: 2px; font-style: italic; height: 24px; line-height: 24px; font-weight: 300; }
+    &.profile-email, &.profile-li { padding-left: 5px; letter-spacing: 0.5px; }
+    &.profile-email { font-size: 84%; font-weight: 600; }
+    &.profile-li { font-style: normal; text-decoration: underline; }
   }
   .navbar-img {
-    width: 70%;
-    margin: 0 15%;
+    width: 50%;
+    margin: 0 25%;
   }
 }
 
@@ -54,7 +57,7 @@ footer {
     height: 80px; line-height: 80px;
     display: inline-flex; justify-content: space-around;
     width: 80%; margin: 0 10%;
-    .copy { margin: auto; line-height: 30px; font-size: small; }
+    .copy { color: white; margin: auto; line-height: 30px; font-size: small; }
     /*a { font-size: 125%; }*/
   }
 }

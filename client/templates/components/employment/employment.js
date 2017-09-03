@@ -23,7 +23,7 @@ if (Meteor.isClient) {
     },
     jobs: function () {
       var simeon_jobs = [
-        { "title": "Job Title", "company": "Bitheads Inc.", "img": "bithead.jpg",
+        { "title": "Job Title", "company": "Bitheads Inc.", "img": "bithead.png",
           "content": {
             "dates": "month 2000 - month 2000",
             "points": [ "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -32,7 +32,7 @@ if (Meteor.isClient) {
                       ]
           }
         },
-        { "title": "Job Title", "company": "Bitheads Inc.", "img": "bithead.jpg",
+        { "title": "Job Title", "company": "Bitheads Inc.", "img": "bithead.png",
           "content": {
             "dates": "month 2000 - month 2000",
             "points": [ "Fusce egestas orci elit, sed ultricies nunc sollicitudin vel. Nunc et eleifend lacus, at molestie augue.",
@@ -42,7 +42,7 @@ if (Meteor.isClient) {
                       ]
           }
         },
-        { "title": "Job Title", "company": "Bitheads Inc.", "img": "bithead.jpg",
+        { "title": "Job Title", "company": "Bitheads Inc.", "img": "bithead.png",
           "content": {
             "dates": "month 2000 - month 2000",
             "points": [ "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -54,7 +54,7 @@ if (Meteor.isClient) {
       ];
 
       var logan_jobs = [
-        { "title": "Job Title", "company": "Bitheads Inc.", "img": "bithead.jpg",
+        { "title": "Job Title", "company": "Bitheads Inc.", "img": "bithead.png",
           "content": {
             "dates": "month 2000 - month 2000",
             "points": [ "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -63,7 +63,7 @@ if (Meteor.isClient) {
                       ]
           }
         },
-        { "title": "Job Title", "company": "Bitheads Inc.", "img": "bithead.jpg",
+        { "title": "Job Title", "company": "Bitheads Inc.", "img": "bithead.png",
           "content": {
             "dates": "month 2000 - month 2000",
             "points": [ "Fusce egestas orci elit, sed ultricies nunc sollicitudin vel. Nunc et eleifend lacus, at molestie augue.",
@@ -73,7 +73,7 @@ if (Meteor.isClient) {
                       ]
           }
         },
-        { "title": "Job Title", "company": "Bitheads Inc.", "img": "bithead.jpg",
+        { "title": "Job Title", "company": "Bitheads Inc.", "img": "bithead.png",
           "content": {
             "dates": "month 2000 - month 2000",
             "points": [ "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
