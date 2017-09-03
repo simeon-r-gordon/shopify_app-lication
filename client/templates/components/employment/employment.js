@@ -23,15 +23,15 @@ if (Meteor.isClient) {
     },
     jobs: function () {
       var simeon_jobs = [
-        {"title": "Development Skills", "icon": "code"},
-        {"title": "Tech Skills", "icon": "computer"},
-        {"title": "People Skills", "icon": "group"},
+        {"title": "Job Title", "company": "Bitheads Inc.", "img": "bithead.jpg"},
+        {"title": "Job Title", "company": "Bitheads Inc.", "img": "bithead.jpg"},
+        {"title": "Job Title", "company": "Bitheads Inc.", "img": "bithead.jpg"},
       ];
 
       var logan_jobs = [
-        {"title": "UX/Design Skills", "icon": "color_lens"},
-        {"title": "Management Skills", "icon": "assignment"},
-        {"title": "People Skills", "icon": "group"},
+        {"title": "Job Title", "company": "Bitheads Inc.", "img": "bithead.jpg"},
+        {"title": "Job Title", "company": "Bitheads Inc.", "img": "bithead.jpg"},
+        {"title": "Job Title", "company": "Bitheads Inc.", "img": "bithead.jpg"},
       ];
       if (Session.get("profile").id == "sim") {
         return simeon_jobs;

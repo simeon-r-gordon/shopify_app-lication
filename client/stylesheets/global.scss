@@ -22,14 +22,14 @@ $med_grey: #dfe3e8;
 $dark_grey: #2a2c2e;
 
 $dark_blue: #000639;
-$normal_text: #717f8c;
+$normal_text: #637381;
 $heavy_text: #212b35;
 $purple_text: #5c6ac4;
 
 html { background-color: white; }
-body { height:100vh; }
+/*body { min-height:100vh; }*/
 
-p { @extend .flow-text; }
+p { @extend .flow-text; color: $normal_text; }
 a {
 	@extend .flow-text; text-decoration: underline; color: black;
 	&:visited { color: black; }
@@ -57,7 +57,7 @@ div.main-content {
 	img.random_img { width: 100%; margin: 20px 0; }
 	.title {
 		display: inline-flex; width: 90%; margin: 20px auto 10px auto;
-		p { font-weight: bold; font-size: 180%; margin: auto; text-align: left; margin-left: 10px; }
+		p { font-weight: bold; font-size: 180%; margin: auto; text-align: left; margin-left: 10px; color: black; }
 		img.title-img { width: 12%; height: 100%; margin: auto 0;}
 	}
 	.intro { width: 90%; text-align: left; }
@@ -77,12 +77,30 @@ div.button-area {
 
 ul.collapsible {
 	width: 92%; margin: 30px auto;
+	.collapsible-header {
+
+		color: black;
+		font-weight: bold;
+	}
 	.collapsible-body { background-color: $light_grey; }
 	&.popout li {
 		margin: 0;
 		box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.04), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
 		&.active { margin: 0 0 10px 0; box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.08), 0 4px 15px 0 rgba(0, 0, 0, 0.12); }
 	}
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------- employment --------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+ul.collapsible .collapsible-header {
+	.job-header {
+		width: 100%;
+		display: inline-flex; justify-content: space-between;
+		.jobtitle, .company { margin: auto 0; }
+		.company { font-weight: normal; }
+	}
+	.job-img { width: 15%; height: 100%; float: right;}
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------*/

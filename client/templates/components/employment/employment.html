@@ -12,7 +12,16 @@
 	      <!-- <li class="{{#if odd @index}}odd_item{{/if}}"> -->
 		    {{#each jobs }}
 		      <li>
-		        <div class="collapsible-header"><i class="material-icons">{{this.icon}}</i>{{this.title}}</div>
+		        <div class="collapsible-header">
+		        	<div class="job-header">
+		        		<div class="jobtitle">{{this.title}}</div>
+		        		<div class="company">
+		        		  <div> {{this.company}}</div>
+	        		  </div>
+
+		        	</div>
+		        	<img class="circle job-img" src="/images/{{this.img}}">
+	        	</div>
 		      	<div class="collapsible-body">
 		      		<img class="list_img" src="{{this.img}}">
 		      		<span>Lorem ipsum dolor sit amet.</span>
