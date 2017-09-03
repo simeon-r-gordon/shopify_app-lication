@@ -1,9 +1,5 @@
 if (Meteor.isClient) {
   Template.home.onCreated(function() {
-    Session.set("selected", {
-      name: "none",
-      percent: 0
-    });
   });
 
   Template.home.onRendered(function() {

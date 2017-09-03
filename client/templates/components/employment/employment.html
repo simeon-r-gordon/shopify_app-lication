@@ -1,0 +1,24 @@
+<template name="employment">
+  <!-- MEDIUM AND SMALLER CONTENT -->
+  <div class="page-content hide-on-large-only"> <div class="main-content">
+	    <div class="title">
+	    	<img src="images/{{ profile.name.first }}.jpg" alt="" class="circle title-img">
+	      <p> employment experience</p>
+      </div>
+	    <p class="intro"> {{ intro }} </p>
+
+			<ul class="collapsible popout" data-collapsible="accordion">
+	      <!-- if we want, add the odd item class to change every other row -->
+	      <!-- <li class="{{#if odd @index}}odd_item{{/if}}"> -->
+		    {{#each jobs }}
+		      <li>
+		        <div class="collapsible-header"><i class="material-icons">{{this.icon}}</i>{{this.title}}</div>
+		      	<div class="collapsible-body">
+		      		<img class="list_img" src="{{this.img}}">
+		      		<span>Lorem ipsum dolor sit amet.</span>
+		    		</div>
+		      </li>
+		    {{/each}}
+		  </ul>
+  </div> </div>
+</template>

@@ -1,6 +1,5 @@
 if (Meteor.isClient) {
-	Template._header.onRendered(function() {
-
+	Template._header.onCreated(function() {
     // Profile definitions
     var simeon = {
       "id": "sim",
@@ -20,14 +19,16 @@ if (Meteor.isClient) {
     Session.set('logan', logan);
 
     Session.set('profile', simeon);
+	});
 
-		$(document).ready(function(){
-	    $('.collapsible').collapsible({  edge: 'right', closeOnClick: true  });
+  Template._header.onRendered(function() {
+    $(document).ready(function(){
+      $('.collapsible').collapsible({  edge: 'right', closeOnClick: true  });
       $(".button-collapse").sideNav({ edge: 'right', closeOnClick: true });
       $(".services").sideNav({ edge: 'right', closeOnClick: true });
       $(".dropdown-button").dropdown();
-	  });
-	});
+    });
+  });
 
   Template._header.helpers({
     profile: function () {
