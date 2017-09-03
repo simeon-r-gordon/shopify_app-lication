@@ -45,7 +45,7 @@ a {
 }
 
 div.main-content {
-
+	min-height: calc(100vh - 131px);
 	text-align: center;
 	p { width: 96%; margin: 10px auto; }
 	div.img_container { img { width: 50%; margin-top: 20px; } }
@@ -81,7 +81,11 @@ ul.collapsible {
 		color: black;
 		font-weight: bold;
 	}
-	.collapsible-body { color: $normal_text; background-color: $light_grey; }
+	.collapsible-body {
+		text-align: left; padding: 10px;
+		color: $normal_text; background-color: $light_grey;
+		p { font-size: small; }
+	}
 	&.popout li {
 		margin: 0;
 		box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.04), 0 4px 15px 0 rgba(0, 0, 0, 0.1);
@@ -109,13 +113,13 @@ ul.collapsible.jobs {
 		.job-header {
 			width: 100%;
 			display: inline-flex; justify-content: space-between;
-			.jobtitle, .company { margin: auto 0; }
-			.company { font-weight: normal; margin-right: 4px; }
+			.jobtitle, .company {  text-align: left; margin: auto 0; }
+			.jobtitle { font-size: 90%; max-width: 50%;}
+			.company { text-align: right; font-weight: normal; font-size: 80%; margin-right: 4px; }
 		}
 		.job-img { width: 15%; height: 100%; float: right;}
 	}
 	.collapsible-body {
-		padding: 10px; text-align: left;
 		.dates { font-style: italic; margin: 0; font-size: small; }
 		.job-details {
 			width: 100%;

@@ -12,9 +12,8 @@
 		      <li>
 		        <div class="collapsible-header"><i class="material-icons">{{this.icon}}</i>{{this.title}}</div>
 		      	<div class="collapsible-body">
-		      		<img class="list_img" src="{{this.img}}">
-		      		{{#each skills }}
-		      			<p class="skill">- {{ this }}</p>
+		      		{{#each skill }}
+		      			<p class="skill">- {{ this.text }} <span class="right"> {{> starsRating rating=this.stars size=15}} </span></p>
 		      		{{/each}}
 		    		</div>
 		      </li>
