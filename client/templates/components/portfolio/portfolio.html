@@ -1,0 +1,37 @@
+<template name="portfolio">
+  <!-- MEDIUM AND SMALLER CONTENT -->
+  <div class="page-content"> <div class="main-content">
+	    <div class="title">
+	    	<img src="images/{{ profile.name.first }}.jpg" alt="" class="circle title-img">
+	      <p> portfolio</p>
+      </div>
+      <p class="intro"> {{ intro }} </p>
+
+<!--
+	      <a data-fancybox rel="gallery1" href="/images/portfolio/mockup01.jpg"><img class="small_portfolio" src="/images/portfolio/mockup01.jpg"></a>
+	      <a data-fancybox rel="gallery1" href="/images/portfolio/mockup02.jpg"><img class="small_portfolio" src="/images/portfolio/mockup02.jpg"></a>
+	      <a data-fancybox rel="gallery1" href="/images/portfolio/mockup03.jpg"><img class="small_portfolio" src="/images/portfolio/mockup03.jpg"></a>
+	      <a data-fancybox rel="gallery1" href="/images/portfolio/mockup04.jpg"><img class="small_portfolio" src="/images/portfolio/mockup04.jpg"></a>
+	      <a data-fancybox rel="gallery1" href="/images/portfolio/mockup05.jpg"><img class="small_portfolio" src="/images/portfolio/mockup05.jpg"></a> -->
+
+	    {{#each section }}
+      	<div class="portfolio">
+      		<h4>{{this.title}}</h4>
+      		{{#each category }}
+      			<div class="portfolio_container {{ this.class }}">
+      				<hr>
+      				<p class="portfolio_title">{{ this.text }} </p>
+      				<div class="gallery_container gallery-{{@index}}">
+      				{{#each this.photo }}
+      					<a data-fancybox rel="gallery-{{@index}}" href="/images/portfolio/{{ this }}">
+      						<!-- Thumbnail -->
+      						<img class="small_portfolio" src="/images/portfolio/{{ this }}">
+    						</a>
+      				{{/each}}
+      				</div>
+    				</div>
+      		{{/each}}
+    		</div>
+	    {{/each}}
+  </div> </div>
+</template>
