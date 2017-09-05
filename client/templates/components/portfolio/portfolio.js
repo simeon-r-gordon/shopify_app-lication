@@ -24,14 +24,6 @@ if (Meteor.isClient) {
       return logan_intro;
     },
     section: function () {
-            // {"text": "Explainer video",
-            // "photo": [""]},
-            // {"text": "Branche Website (deactivated)",
-            // "photo": [""]},
-            // {"text": "Branche Blog",
-            // "photo": [""]},
-            // {"text": "DES website",
-            // "photo": [""]},
       var logan_portfolio = [
         {"title": "Branche (Digital Escrow Services)",
           "category": [
@@ -41,6 +33,8 @@ if (Meteor.isClient) {
             "photo": ["workflow00.jpg", "workflow01.jpg", "workflow02.jpg", "workflow03.jpg"]},
             {"text": "Presentation screens", "class": "portfolio_presentation",
             "photo": ["presentation01.jpg", "presentation02.jpg", "presentation03.jpg", "presentation04.jpg", "presentation05.jpg"]},
+            {"text": "Branche Website (deactivated)", "class": "portfolio_website",
+            "photo": ["website01.jpg", "website02.jpg", "website03.jpg"]},
           ]
         },
         {"title": "Wireframes and Mockups", "class": "portfolio_mockups",
@@ -72,11 +66,29 @@ if (Meteor.isClient) {
       ];
       return logan_portfolio;
     },
+    grouping: function (str) {
+      return str.substring(0, 3);
+    },
+    link_section: function (section) {
+      console.log(section);
+      return (section.includes("Branche"));
+    }
   });
 
   Template.portfolio.events({
     'click #button_floor0': function(event) {
       Session.set('floor', 0);
     },
+  });
+
+  Template.links.helpers({
+    sub_category: function () {
+      var links = [
+        {"text": "Explainer video", "video": true, "link": "https://www.youtube.com/embed/oiUJqtAdmv4"},
+        {"text": "Branche Blog", "video": false, "link": "https://medium.com/@branche/the-blockchain-revolution-needs-to-be-for-everyone-86479a1d645e"},
+        {"text": "DES website", "video": false, "link": "https://www.digitalescrowservices.com/"},
+      ];
+      return links;
+    }
   });
 }
