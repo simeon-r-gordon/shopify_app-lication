@@ -5,6 +5,7 @@ if (Meteor.isClient) {
   Template.interests.onRendered(function() {
     $(document).ready(function(){
       $('.collapsible').collapsible({});
+      $(this).scrollTop(0);
     });
 	});
 

@@ -4,9 +4,7 @@ if (Meteor.isClient) {
 
   Template.portfolio.onRendered(function() {
     $(document).ready(function(){
-      // $('.carousel.carousel-slider').carousel({fullWidth: true, indicators: true});
-      // $('.carousel').carousel({});
-      // $('.materialboxed').materialbox();
+      $(this).scrollTop(0);
 
       $("[data-fancybox]").fancybox({
         'buttons' : [
@@ -19,6 +17,9 @@ if (Meteor.isClient) {
 	});
 
   Template.portfolio.helpers({
+    profile: function () {
+      return Session.get('profile');
+    },
     intro: function () {
       var logan_intro = "My experiences, natural ability, and personal interests have me build the perfect skill for creating effective products, maintaining team engagement, and managing business concerns while ensuring an absolute focus on user oriented design.";
       return logan_intro;
@@ -32,7 +33,7 @@ if (Meteor.isClient) {
             {"text": "UX Workflow", "class": "portfolio_ux",
             "photo": ["workflow00.jpg", "workflow01.jpg", "workflow02.jpg", "workflow03.jpg"]},
             {"text": "Presentation screens", "class": "portfolio_presentation",
-            "photo": ["presentation01.jpg", "presentation02.jpg", "presentation03.jpg", "presentation04.jpg", "presentation05.jpg"]},
+            "photo": ["presentation01.jpg", "presentation02.jpg", "presentation03.jpg", "presentation04.jpg"]},
             {"text": "Branche Website (deactivated)", "class": "portfolio_website",
             "photo": ["website01.jpg", "website02.jpg", "website03.jpg"]},
           ]

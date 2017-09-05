@@ -7,41 +7,47 @@
       </div>
       <p class="intro"> {{ intro }} </p>
 
-	    {{#each section }}
-      	<div class="portfolio">
-      		<h4>{{this.title}}</h4>
-      		{{#each category }}
-      			<div class="portfolio_container {{ this.class }}">
-      				<hr>
-      				<p class="portfolio_title">{{ this.text }} </p>
-      				<div class="gallery_container gallery-{{@index}}">
-      				{{#each this.photo }}
-      					<a data-fancybox rel="gallery-{{ grouping this}}" href="/images/portfolio/{{ this }}">
-      						<!-- Thumbnail -->
-      						<img class="small_portfolio" src="/images/portfolio/{{ this }}">
-    						</a>
-      				{{/each}}
-      				</div>
-    				</div>
-      		{{/each}}
-      		{{#if link_section this.title }}
-      			{{> links }}
-      		{{/if }}
-    		</div>
-	    {{/each}}
+        <!-- if we want, add the odd item class to change every other row -->
+        <!-- <li class="{{#if odd @index}}odd_item{{/if}}"> -->
+        {{#each section }}
+          <h4>{{this.title}}</h4>
+          <ul class="collapsible popout" data-collapsible="accordion">
+          {{#each category }}
+            <li>
+              <div class="collapsible-header">{{this.text}}</div>
+              <div class="collapsible-body">
+                  <div class="portfolio_container {{ this.class }}">
+                    <div class="gallery_container gallery-{{@index}}">
+                    {{#each this.photo }}
+                      <a data-fancybox rel="gallery-{{ grouping this}}" href="/images/portfolio/{{ this }}">
+                        <!-- Thumbnail -->
+                        <img class="small_portfolio" src="/images/portfolio/{{ this }}">
+                      </a>
+                    {{/each}}
+                    </div>
+                  </div>
+              </div>
+            </li>
+          {{/each}}
+          {{#if link_section this.title }}
+            {{> links }}
+          {{/if }}
+          </ul>
+        {{/each}}
   </div> </div>
 </template>
 
 <template name="links">
 	{{#each sub_category }}
-		<div class="portfolio_container {{ this.class }}">
-			<hr>
-			<p class="portfolio_title">{{ this.text }} </p>
-			{{#if this.video }}
-  			<a data-fancybox data-fancybox-type="iframe" href="{{ this.link }}">Youtube Video</a>
-  		{{else }}
-				<a href="{{ this.link }}" target="_blank">click here to visit</a>
-  		{{/if }}
-		</div>
+		<li>
+      <div class="collapsible-header">{{this.text}}</div>
+      <div class="collapsible-body">
+        {{#if this.video }}
+          <iframe class="youtube" src="{{ this.link }}" frameborder="0" allowfullscreen></iframe>
+        {{else }}
+          <a href="{{ this.link }}" target="_blank">click here to visit</a>
+        {{/if }}
+      </div>
+    </li>
 	{{/each}}
 </template>

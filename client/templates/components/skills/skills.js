@@ -9,6 +9,7 @@ if (Meteor.isClient) {
   Template.skills.onRendered(function() {
     $(document).ready(function(){
       $('.collapsible').collapsible({});
+      $(this).scrollTop(0);
     });
 	});
 
