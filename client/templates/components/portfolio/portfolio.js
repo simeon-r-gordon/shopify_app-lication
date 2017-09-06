@@ -4,6 +4,7 @@ if (Meteor.isClient) {
 
   Template.portfolio.onRendered(function() {
     $(document).ready(function(){
+      $('.collapsible').collapsible({});
       $(this).scrollTop(0);
 
       $("[data-fancybox]").fancybox({

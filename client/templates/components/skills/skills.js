@@ -43,7 +43,7 @@ if (Meteor.isClient) {
             {"text": "Learning new languages", "stars": 5},
           ]
         },
-        {"title": "Technology", "icon": "computer",
+        {"title": "Technical", "icon": "computer",
           "skill": [
             {"text": "Ethereum+Solidity", "stars": 5},
             {"text": "Blockchain", "stars": 4},
@@ -76,31 +76,36 @@ if (Meteor.isClient) {
       ];
 
       var logan_skills = [
-        {"title": "Professional", "icon": "color_lens",
+        {"title": "Professional", "icon": "assignment",
           "skill": [
             {"text": "Product design", "stars": 5},
             {"text": "Problem solving", "stars": 5},
-            {"text": "Communications", "stars": 4},
             {"text": "Big picture thinking", "stars": 5},
-            {"text": "empathy/understanding audience", "stars": 5},
             {"text": "Project management", "stars": 4},
             {"text": "Sales", "stars": 3},
-            {"text": "Interdisciplinary coordination", "stars": 5},
-            {"text": "Stakeholder interaction", "stars": 4},
             {"text": "Agile design and development", "stars": 4},
             {"text": "Budgeting", "stars": 3},
             {"text": "Persona development", "stars": 4},
             {"text": "strategy/planning", "stars": 4},
-            {"text": "Social media", "stars": 2},
             {"text": "Research", "stars": 4},
-            {"text": "Efficiency", "stars": 4},
+            {"text": "Accounting", "stars": 3},
             {"text": "Adaptability", "stars": 4},
-            {"text": "Conflict resolution", "stars": 4},
             {"text": "Creative direction", "stars": 5},
           ]
         },
-
-        {"title": "Creative", "icon": "assignment",
+        {"title": "Interpersonal", "icon": "group",
+          "skill": [
+            {"text": "General communication", "stars": 5},
+            {"text": "Team coordination", "stars": 4},
+            {"text": "empathy/understanding audience", "stars": 5},
+            {"text": "Conflict resolution", "stars": 4},
+            {"text": "Social media", "stars": 2},
+            {"text": "Stakeholder interaction", "stars": 4},
+            {"text": "User interaction", "stars": 4},
+            {"text": "Interdisciplinary coordination", "stars": 5},
+          ]
+        },
+        {"title": "Creative", "icon": "color_lens",
           "skill": [
             {"text": "UX design", "stars": 5},
             {"text": "concept/wireframe design", "stars": 5},
@@ -114,7 +119,7 @@ if (Meteor.isClient) {
             {"text": "Animation", "stars": 5},
           ]
         },
-        {"title": "Technical", "icon": "group",
+        {"title": "Technical", "icon": "computer",
           "skill": [
             {"text": "Photoshop", "stars": 5},
             {"text": "Illustrator", "stars": 3},
@@ -124,6 +129,8 @@ if (Meteor.isClient) {
             {"text": "InVision", "stars": 1},
             {"text": "3DS Max", "stars": 2},
             {"text": "Maya", "stars": 3},
+            {"text": "Standard Office tools", "stars": 3},
+            {"text": "Visio/iDraw", "stars": 4},
             {"text": "Software development", "stars": 0},
             {"text": "Development processes", "stars": 5},
             {"text": "Object orientation", "stars": 5},

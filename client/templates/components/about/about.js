@@ -14,7 +14,7 @@ if (Meteor.isClient) {
       return Session.get('profile');
     },
     intro: function () {
-      var simeon_intro = "First and foremost I am a problem solver. I am also a builder and a wizard, I need to gain and share new knowledge and make things from it.";
+      var simeon_intro = "First and foremost I am a problem solver. I am also a builder and a wizard, I am driven to gain and share knowledge and use it to build new things. ";
       var logan_intro = "While a few written words can hardly convey a deep understanding of my personality, it can at least relate some basic facts about me and my motivations.";
       if (Session.get("profile").id == "sim") {
         return simeon_intro;
@@ -24,21 +24,21 @@ if (Meteor.isClient) {
     },
     sections: function () {
       var simeon_sections = [
-        { "img": "market.jpg",
+        { "img": "rubix.jpg",
           "paragraphs": [
-            "If you leave a puzzle in front of me, can’t help but to try and figure it out. Not only is there a great reward in figuring out the solution, I know that every problem I set my mind on leaves me better prepared for ones in the future. I constantly strive to become more efficient at solving wider varieties of problems, not just for myself but to help others around me.",
-            "Living in the information age, computer science presented itself as the obvious way for me to bring all my ideas to life. It is a perfect blend of creativity, problem solving, learning and building all at once."
+            "If you leave a puzzle in front of me, can’t help but try to figure it out. Not only is there a great reward in discovering the solution, I know that every problem I set my mind against will leave me better prepared for ones in the future. I constantly strive to become more efficient at solving a wider varieties of problems, not just for myself but to help others around me.",
+            "Living in the information age, computer science presented itself as the obvious way for me to bring all my ideas to life. It is a perfect blend of creativity, problem solving, learning and building all at once.",
           ]
         },
-        { "img": "locks.jpg",
+        { "img": "libraryshelves.jpg",
           "paragraphs": [
-            "I am constantly on the search for new information. New stories, facts, techniques and skills, all of them interest me equally. It is only by combining widely diverse ideas and experiences that we can come up with truly new and brilliant things. I must learn as much as possible with my time, gaining new skills and perfecting old ones.",
+            "I am constantly on the search for new information. New stories, facts, techniques and skills, all of them interest me equally. It is only by combining widely diverse ideas and experiences that we can come up with truly new and brilliant things. I get a lot of satisfaction from learning as much as I can, gaining new skills and perfecting old ones.",
             "Though what good is this knowledge if kept all to myself? My own success is directly tied to that of my team, no matter the setting. Thankfully teaching is a reward in its own right, and so I love sharing what I have learned with others.",
           ]
         },
         { "img": "DES.jpg",
           "paragraphs": [
-            "Even before I graduated from the University of Ottawa I became involved in a couple of projects with the up-and-coming field of Blockchain tech. Here I found a whole world of new puzzles, and practically everything I worked on was one of the first of its kind.",
+            "Even before I graduated from the University of Ottawa, my love of new ideas and my interest in cryptography led me to become involved with a couple of projects in the new field of Blockchain tech. Here I found a whole world of new puzzles, and practically everything I worked on was one of the first of its kind. ",
             "This led to a my recent startup “Digital Escrow Services”, where I worked to provide micro-credit and financial services using Blockchain tech in a mobile application. I wanted to use the improvements in both security and accessibility these two technologies provide to change the lives of the underbanked in Canada.",
           ]
         },
