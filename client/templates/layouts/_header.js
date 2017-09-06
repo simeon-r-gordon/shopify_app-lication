@@ -13,7 +13,7 @@ if (Meteor.isClient) {
       "id": "log",
       "name": {"first": "Logan", "last": "Schinbeckler"},
       "address": {"street": "1512-1375 Prince of Wales Ave.", "area": "Ottawa, Ontario", "zip": "K2C 3L5"},
-      "email": "L.Schinbeckler@gmail.com",
+      "email": "Logan.J.Schinbeckler@gmail.com",
       "phone": "613-883-9398",
       "li_url": "https://www.linkedin.com/in/loganschinbeckler/",
     }
