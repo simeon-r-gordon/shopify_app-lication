@@ -6,48 +6,20 @@
 	      <p> portfolio</p>
       </div>
       <p class="intro"> {{ intro }} </p>
+      <br><br>
+      <div class="section">
+        <p class="about">Branche screens</p>
+        <a data-fancybox rel="gallery-interest" href="/images/portfolio/branche.jpg">
+          <img class="clickable_img" src="/images/portfolio/branche.jpg">
+        </a>
+        <p class="about">Branche Explainer Video</p>
+        <iframe class="youtube" src="https://www.youtube.com/embed/oiUJqtAdmv4" frameborder="0" allowfullscreen></iframe>
 
-        <!-- if we want, add the odd item class to change every other row -->
-        <!-- <li class="{{#if odd @index}}odd_item{{/if}}"> -->
-        {{#each section }}
-          <h4>{{this.title}}</h4>
-          <ul class="collapsible popout" data-collapsible="accordion">
-          {{#each category }}
-            <li>
-              <div class="collapsible-header">{{this.text}}</div>
-              <div class="collapsible-body">
-                  <div class="portfolio_container {{ this.class }}">
-                    <div class="gallery_container gallery-{{@index}}">
-                    {{#each this.photo }}
-                      <a data-fancybox rel="gallery-{{ grouping this}}" href="/images/portfolio/{{ this }}">
-                        <!-- Thumbnail -->
-                        <img class="small_portfolio" src="/images/portfolio/{{ this }}">
-                      </a>
-                    {{/each}}
-                    </div>
-                  </div>
-              </div>
-            </li>
-          {{/each}}
-          {{#if link_section this.title }}
-            {{> links }}
-          {{/if }}
-          </ul>
-        {{/each}}
-  </div> </div>
-</template>
+        <p class="about">DES website</p>
+        <a href="https://www.digitalescrowservices.com/" target="_blank"><img class="clickable_img" src="/images/portfolio/website_des.jpg"></a>
 
-<template name="links">
-	{{#each sub_category }}
-		<li>
-      <div class="collapsible-header">{{this.text}}</div>
-      <div class="collapsible-body">
-        {{#if this.video }}
-          <iframe class="youtube" src="{{ this.link }}" frameborder="0" allowfullscreen></iframe>
-        {{else }}
-          <a href="{{ this.link }}" target="_blank">click here to visit</a>
-        {{/if }}
+        <p class="about">Online Portfolio</p>
+        <a href="https://loganschinbecklerportfolio.carrd.co/" target="_blank"><img class="clickable_img" src="/images/portfolio/website_portfolio.jpg"></a>
       </div>
-    </li>
-	{{/each}}
+  </div> </div>
 </template>

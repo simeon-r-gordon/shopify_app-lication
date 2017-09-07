@@ -94,7 +94,7 @@ if (Meteor.isClient) {
             ]
           }
         },
-        { "title": "Product Designer", "company": "Big Hats Entertainment", "img": "bitheads.png",
+        { "title": "Product Designer", "company": "Big Hats Entertainment", "img": "bighat.png",
           "content": {
             "dates": "oct 2009 – nov 2010",
             "points": [

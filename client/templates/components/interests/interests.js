@@ -23,7 +23,7 @@ if (Meteor.isClient) {
     },
     intro: function () {
       var simeon_intro = "I believe it is important to keep up a variety of activities in order to maintain balance and keep learning and improving myself.";
-      var logan_intro = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis blandit risus sed pretium facilisis.";
+      var logan_intro = "I have always been a nerd. Even when I went into animation after high school, my other options were physics, engineering and philosophy. I am naturally drawn towards new knowledge and experiences that will help me understand humanity and the world, and new opportunities that will allow me to use my knowledge and experience to make a positive impact on the world.";
       if (Session.get("profile").id == "sim") {
         return simeon_intro;
       } else {
@@ -55,18 +55,23 @@ if (Meteor.isClient) {
       ];
 
       var logan_sections = [
-        { "img": "market.jpg",
+        { "img": "museum.jpg",
           "paragraphs": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "Praesent vestibulum dolor sollicitudin dolor sollicitudin, vel ullamcorper metus gravida. Quisque egestas risus ipsum, ac placerat lacus efficitur eget.",
-            "Sed volutpat ex eget volutpat pharetra. Vivamus in bibendum urna, vel suscipit metus."
+            "A general knowledge of history can help provide us with a greater appreciation for what we have today and an understanding of patterns in human behavior over time. Certain aspects of history and anthropology, like etymology, can just be interesting or entertaining, but understanding how other groups of people dealt with certain problems can provide an interesting perspective on modern issues and help us to think outside the box when discovering solutions.",
+            "Where history and anthropology might help to explain the “what” of human behavior, psychology and evolutionary biology might help to explain the “why” of that behavior. Though often far more subjective and esoteric than something like archaeology, the study of human thoughts and feelings has led to many useful pieces of understanding. From the Pareto principle to Jungian archetypes to the little Albert experiment, even a superficial study of psychology, cognitive science, and human behavior can shed incredibly interesting and useful insights into human thought and behavior",
           ]
         },
-        { "img": "locks.jpg",
+        { "img": "babylon5.jpg",
           "paragraphs": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "Praesent vestibulum dolor sollicitudin dolor sollicitudin, vel ullamcorper metus gravida. Quisque egestas risus ipsum, ac placerat lacus efficitur eget.",
-            "Sed volutpat ex eget volutpat pharetra. Vivamus in bibendum urna, vel suscipit metus."
+            "Not surprisingly, my personal time is filled with nerdy pursuits. I enjoy Game of Thrones and british comedy, and some geeky cliches like Star Trek and Babylon 5, but when I’m not working on some sort of personal project or spending time with friends, I’m typically reading a random scientific article or watching a documentary. One of my favorite TV shows is a series that is nearly 40 years old called “Connections” that covers the history of invention and technology.",
+          ]
+        },
+        { "img": "afn.jpg",
+          "paragraphs": [
+            "Since my discovery of blockchain technology in 2013, I’ve become particularly interested in the power and potential of financial technology in general and blockchain technology in general. Having spent the past 2 years working with the technology, I decided to devote some of my personal time and energy to bringing the benefits of this new fintech paradigm to those people who it could benefit most. ",
+            "To this end I volunteer my time and experience to two groups in particular:",
+            "Cornerstone Housing for Women: \nFor the past several months I have been working with Cornerstone Housing for Women to design and implement a blockchain fundraising portal for their new building on Princeton Avenue in Ottawa. The campaign will be launched in the fall of 2017.",
+            "Project Touchstone: \nA small informal group of First Nations and non First Nations individuals and business owners from across Ontario, working to conceive and develop tools and systems to provide improved financial services and opportunities to First Nations people living on reserves across Canada.",
           ]
         },
       ];
